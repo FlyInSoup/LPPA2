@@ -14,3 +14,10 @@ Principalmente me centré en el cuerpo de la página, por eso el header todavia 
 
 Principalmente me cuesta el posicionamiento de los elementos sin utilizar el flex e identificar detalles de estilos de texto como espaciado, interlineado, entre otros que hacen el texto mas estético.
 
+-------------------------------------------
+Avance problematica semana 5.
+Está el diseño responsive casi terminado.
+Que queda?
+Botones del header
+Insertar accesos a al menos 3 noticias (asi se forma una row en pc) debajo de la principal 
+
