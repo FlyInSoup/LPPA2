@@ -228,6 +228,7 @@ figcaption span{
     border-color: #0250c9;
     transition: all .2s ease-in-out;
     position: relative;
+    width: 100%;
 }
 .boton-noticia:hover{
     background-color: #126fff;
@@ -277,6 +278,12 @@ figcaption span{
     font-size: 48px;
     font-weight: 700;
     line-height: 56px;
+}
+
+.boton-noticia{
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
 
