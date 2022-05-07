@@ -14,3 +14,5 @@ Principalmente me centré en el cuerpo de la página, por eso el header todavia 
 
 Principalmente me cuesta el posicionamiento de los elementos sin utilizar el flex e identificar detalles de estilos de texto como espaciado, interlineado, entre otros que hacen el texto mas estético.
 
+En un caso, utilicé table y td para posicionar elementos uno al lado del otro. En particular en el de la sección de redes de la noticia y la sección del cuerpo de la noticia. Pienso que no es correcto, por lo que consultaré como mejorarlo la clase próxima.
+
