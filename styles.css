@@ -82,7 +82,7 @@ nav{
 .boton-nav-mobile a img{
     width: 25px;
     position: relative;
-    left: 5%;
+    left: 40%;
     margin-bottom: 5%;
 }
 .boton-nav-mobile a p{
@@ -93,6 +93,7 @@ nav{
     margin: 0;
     color: #333;
     position: relative;
+    left: 35%;
 }
 
 body{
@@ -113,12 +114,14 @@ body{
     letter-spacing: -.4px;
     margin-bottom: 10px;
 }
+
 .titulo-interno{
-    font-size: 24px;
+    font-size: 20px;
     font-family: SuecaSlab, Georgia,"serif";
     font-weight: 700;
     letter-spacing: -.4px;
     margin-bottom: 8px;
+    padding-top: 30px;
 }
 .subtitulo{
     font-size: 18px;
@@ -182,20 +185,18 @@ td{
 table:first-child{
     margin-right: 40px;
 }
-.redes{
-    display: inline;
-}
 .redes img{
     width: 1.5rem;
     margin: 10px;
 }
 .col1{
+    display: inline;
     position: relative;
     left: 0px;
 }
 .col2{
-    position: absolute;
-    right: 10px;
+    display: inline;
+    float: right;
 }
 figure img{
     width: 100%;
@@ -257,19 +258,72 @@ figcaption span{
 
 /*Tablet*/
 @media (min-width: 768px) {
-    .contenido-noticia{
-        margin-left: 30px;
-        margin-right: 15px;
-    }
+   /* PARA HACER LA PRIMERA LETRA MAS GRANDE Y CON OTRO ESTILO*/
+
+.primer-parrafo::first-letter{
+    text-transform: uppercase;
+    font-size: 64px;
+    font-family: SuecaSlab, Georgia,"serif";
+    font-weight: 700;
+    margin: 16px 8px 8px 0px;
+    float: left;
+}  
+
+.titulo-interno{
+    font-size: 24px;
+}
+
+.titulo-noticia{
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 56px;
+}
+
+
 }
 
 
 /*PC*/
 @media (min-width: 1024px) {
+    .nav-mobile{
+        display: none;
+    }
+    .boton-invisible{
+        display: inline;
+    }
+    .redes{
+        display: inline;
+        position: absolute;
+        left: 0px;
+        width: 15%;
+    }
+    .redes img{
+        display: block;
+        margin: 20px 0px;
+    }
+    #tercer-icono{
+        padding-bottom: 10px;
+        border-bottom: 1px solid black;
+    }
+    .col2{
+        float: none;
+    }
     .contenido-noticia{
-        margin-left: 250px;
+        margin-left: 20px;
         margin-right: 175px;
     }
+    .articulo{
+        position: relative;
+    }
+    .cuerpo-noticia{
+        position: absolute;
+        right: 0;
+        width: 85%;
+    }
+    .primer-parrafo{
+        margin-top: 16px;
+    }
+
 }
 
 
