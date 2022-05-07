@@ -8,28 +8,97 @@
     src: url(https://www.lanacion.com.ar/pf/resources/fonts/suecaslab-bold-webfont.woff2?d=851);
 }
 
+*{
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
 /*HEADER*/
-header div{
-    align-content: center;
+header{
+    position: relative;
+    border-bottom: var(--linea-separadora);
+    height: 40px;
 }
 
 header div{
-    display: inline-block;
-    border-bottom: var(--linea-separadora);
+    display: block;
     margin: 5px;
 }
 
+.boton-invisible{
+    display: none;
+}
+.botones-registro .boton-visible{
+    position: absolute;
+    right: 2%;
+    top: 15%;
+    border-color: transparent;
+    color: #0250c9;
+    background: 0 0;
+    text-transform: uppercase;
+    font-weight: 700;
+}
 .boton-header-izq img{
     width: 15px;
 }
-
+.logo-principal{
+    position: absolute;
+    top: 2%;
+}
 .logo-principal img{
     height: 20px;
+    margin-left: -5px;
+}
+
+nav{
+    height: 40px;
+    padding-top: 20px;
+    margin-bottom: 15px;
+}
+
+.nav-mobile{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    margin-bottom: 0;
+    background: #fff;
+    border-top: 1px solid #e4e4e4;
+    width: 100%;
+    height: 64px;
+    z-index: 1000;
+    padding-left: 12%;
+}
+
+.boton-nav-mobile{
+    display: inline-block;
+    position: relative;
+    bottom: 10px;
+    width: 20%;
+}
+
+.boton-nav-mobile a img{
+    width: 25px;
+    position: relative;
+    left: 5%;
+    margin-bottom: 5%;
+}
+.boton-nav-mobile a p{
+    line-height: 0;
+    font-family: arial, helvetica, sans-serif;
+    font-size: 10px;
+    padding: 0;
+    margin: 0;
+    color: #333;
+    position: relative;
 }
 
 body{
     font-family: Arial,Helvetica,sans-serif;
     color: #333;
+    margin: 15px;
 }
 
 
@@ -37,25 +106,26 @@ body{
 
 /*TITULOS*/
 .titulo-noticia{
-    font-size: 48px;
+    font-size: 24px;
     font-family: SuecaSlab, Georgia,"serif";
     font-weight: 700;
-    line-height: 56px;
+    line-height: 28px;
     letter-spacing: -.4px;
-    margin-bottom: 8px;
+    margin-bottom: 10px;
 }
 .titulo-interno{
     font-size: 24px;
     font-family: SuecaSlab, Georgia,"serif";
     font-weight: 700;
     letter-spacing: -.4px;
-    margin-bottom: 10px;
+    margin-bottom: 8px;
 }
 .subtitulo{
     font-size: 18px;
     line-height: 26px;
     color: #333;
-    margin-right: 250px;
+    margin-bottom: 10px;
+    
 }
 
 /*FECHA DE LA NOTICIA*/
@@ -84,26 +154,17 @@ body{
     color: var(--color-links);
     font-weight: 700;
     font-size: 16px;
-    text-decoration: none;
 }
 
-/*PARA HACER LA PRIMERA LETRA MAS GRANDE Y CON OTRO ESTILO*/
-.primer-parrafo::first-letter{
-    text-transform: uppercase;
-    font-size: 64px;
-    font-family: SuecaSlab, Georgia,"serif";
-    font-weight: 700;
-    margin: 16px 8px 8px 0px;
-    float: left; /*no encontré otra forma de*/
-}   
 
 /*TEXTO DEL CUERPO DE LA NOTICIA*/
 p{
     font-family: "Georgia","serif";
     font-weight: 100;
+    margin-top: 25px;
     margin-bottom: 25px;
     font-size: 19px;
-    line-height: 22px;
+    line-height: 28px;
     letter-spacing: 0.25px;
 }
 .resaltado {
@@ -121,9 +182,20 @@ td{
 table:first-child{
     margin-right: 40px;
 }
-.redes-col1 img{
-    width: 2rem;
-    margin: 15px;
+.redes{
+    display: inline;
+}
+.redes img{
+    width: 1.5rem;
+    margin: 10px;
+}
+.col1{
+    position: relative;
+    left: 0px;
+}
+.col2{
+    position: absolute;
+    right: 10px;
 }
 figure img{
     width: 100%;
@@ -151,14 +223,10 @@ figcaption span{
     border-radius: 8px;
     padding: 12px 16px;
     border: 1px solid transparent;
-    text-transform: uppercase;
-    font-size: 12px;
-    font-weight: 700;
     background-color: #fff;
     border-color: #0250c9;
-    color: #0250c9;
     transition: all .2s ease-in-out;
-    margin-bottom: 25px;
+    position: relative;
 }
 .boton-noticia:hover{
     background-color: #126fff;
@@ -166,14 +234,25 @@ figcaption span{
     color: #fefefe;
     cursor: pointer;
 }
-.texto-boton-noticia{
-    margin-top: 0px;
+
+.texto-btn-noticia{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #0250c9;
+    width: 95%;
+    margin: 0px;
+    line-height: 15px;
 }
-.texto-boton-noticia td{
-    vertical-align: middle;
+
+.icono-flecha{
+    position: absolute;
+    right: 5%;
+    top: 40%;
 }
-.icono-flechita{
-    padding-left: 15px;
+.icono-flecha img{
+    height: 10px;
 }
 
 /*Tablet*/
@@ -196,6 +275,44 @@ figcaption span{
 
 
 /*  ANOTACIONES BORRADOR
+
+PARA HACER LA PRIMERA LETRA MAS GRANDE Y CON OTRO ESTILO
+.primer-parrafo::first-letter{
+    text-transform: uppercase;
+    font-size: 64px;
+    font-family: SuecaSlab, Georgia,"serif";
+    font-weight: 700;
+    margin: 16px 8px 8px 0px;
+    float: left; no encontré otra forma de
+}  
+
+
+.boton-noticia{
+    border-radius: 8px;
+    padding: 12px 16px;
+    border: 1px solid transparent;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 700;
+    background-color: #fff;
+    border-color: #0250c9;
+    color: #0250c9;
+    transition: all .2s ease-in-out;
+    margin-bottom: 25px;
+}
+
+
+.titulo-noticia{
+    font-size: 48px;
+    font-family: SuecaSlab, Georgia,"serif";
+    font-weight: 700;
+    line-height: 56px;
+    letter-spacing: -.4px;
+    margin-bottom: 8px;
+}
+
+
+
 .articulo{
         width: 75%;
     }

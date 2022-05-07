@@ -7,7 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="styles.css">
-    <title>Dólar hoy: el blue cayó por primera vez en ocho dias y borró casi todo el recorrido de ayer - LA NACION
+    <title>
+        Dólar hoy: el blue cayó por primera vez en ocho dias y borró casi todo el recorrido de ayer - LA NACION
     </title>
 </head>
 
@@ -15,34 +16,66 @@
 
     <header>
         <div>
-            <button class="boton-header-izq">
+            <button class="boton-header-izq boton-invisible">
                 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Hamburger_icon.svg/1024px-Hamburger_icon.svg.png"
                     alt="">
                 Secciones
             </button>
 
-            <button class="boton-header-izq">
+            <button class="boton-header-izq boton-invisible">
                 <img src="https://svgsilh.com/svg_v2/1093183.svg" alt="">
                 Buscar
             </button>
         </div>
         <div class="logo-principal">
-
             <a href="https://www.lanacion.com.ar/" class="logoLN" title="Ir a la página principal">
                 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Logo_La_Naci%C3%B3n.svg/2560px-Logo_La_Naci%C3%B3n.svg.png"
-                    alt="">
+                    alt="LogoLN">
             </a>
         </div>
         <div class="botones-registro">
-            <button>
+            <button class="boton-visible">
                 Suscribite
             </button>
-            <button>
+            <button class="boton-invisible">
                 Ingresar
             </button>
         </div>
     </header>
-
+    <nav class="nav-mobile">
+        <div class="boton-nav-mobile">
+            <a href="https://www.lanacion.com.ar">
+                <img src="https://icon-library.com/images/house-icon-transparent/house-icon-transparent-13.jpg" alt="home">
+                <p>Home</p>
+            </a>
+        </div>
+        <div class="boton-nav-mobile">
+            <a href="">
+                <img src="http://cdn.onlinewebfonts.com/svg/img_153057.png" alt="secciones">
+                <p>Secciones</p>
+            </a>
+        </div>
+        <div class="boton-nav-mobile">
+            <a href="https://club.lanacion.com.ar">
+                <img src="https://www.freeiconspng.com/thumbs/credit-card-icon-png/credit-card-2-icon-7.png" alt="Club LN">
+                <p>Club LA NACION</p>
+            </a>
+        </div>
+        <div class="boton-nav-mobile">
+            <a href="https://ingresar.lanacion.com.ar/ingresar/D/9/?callback=aHR0cHM6Ly9teWFjY291bnQubGFuYWNpb24uY29tLmFyL21pLXVzdWFyaW8v">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/9/99/Sample_User_Icon.png" alt="user">
+                <p>Mi Cuenta</p>
+            </a>
+        </div>
+    </nav>
+    <nav>
+        <a href="https://www.lanacion.com.ar/">LA NACION</a>
+        <span> > </span>
+        <a href="https://www.lanacion.com.ar/economia/">Economía</a>
+        <span> > </span>
+        <a href="https://www.lanacion.com.ar/economia/dolar/">Dólar Hoy</a>
+        <span> • Noticia Original</span>
+    </nav>
 
     <div class="contenido-noticia">
 
@@ -78,10 +111,15 @@
                     <span class="autor-figcap"> Shutterstock</span>
                 </figcaption>
             </figure>
-                <div class="redes-col1">
+                <div class="redes col1">
                     <img src="https://cdn-icons-png.flaticon.com/512/1384/1384005.png" alt="">
                     <img src="http://cdn.onlinewebfonts.com/svg/img_336696.png" alt="">
                     <img src="https://cdn.worldvectorlogo.com/logos/whatsapp-glyph-black.svg" alt="">
+                </div>
+                <div class="redes col2">
+                    <img src="https://cdn.pixabay.com/photo/2014/07/10/14/58/letters-389108_960_720.png" alt="">
+                    <img src="data:image/png;base64,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" 
+                        alt="">
                 </div>
                     <p class="primer-parrafo">
                         Luego de que el <span class="resaltado">dólar blue</span> avanzara durante seis ruedas
@@ -118,22 +156,14 @@
 
                     <a href="https://www.lanacion.com.ar/economia/control-de-danos-el-pacto-tacito-del-gobierno-con-empresarios-para-resistir-el-embate-de-cristina-nid26042022/">
                     <button class="boton-noticia">
-                    
-                        <table class="texto-boton-noticia">
-                            <td>
-                                <span>
-                                    CONTROL DE DAÑOS: EL PACTO NO ESCRITO ENTRE EL PRESIDENTE Y LOS
-                                    EMPRESARIOS PARA RESISTIR EL EMBATE DE CRISTINA KIRCHNER
-                                </span>
-                    
-                            </td>
-                            <td>
-                                <i class="icono-flecha">
-                                    <img src="https://images.vexels.com/media/users/3/136984/isolated/lists/0f7b26b01932f7912bd4351d2286b2af-punta-de-flecha-derecha-gruesa-1.png"
-                                        alt=">" width="20" height="20">
-                                </i>
-                            </td>
-                        </table>
+                        <p class="texto-btn-noticia">
+                            CONTROL DE DAÑOS: EL PACTO NO ESCRITO ENTRE EL PRESIDENTE Y LOS
+                            EMPRESARIOS PARA RESISTIR EL EMBATE DE CRISTINA KIRCHNER
+                        </p>
+                        <i class="icono-flecha">
+                            <img src="https://images.vexels.com/media/users/3/136984/isolated/lists/0f7b26b01932f7912bd4351d2286b2af-punta-de-flecha-derecha-gruesa-1.png"
+                                alt=">">
+                        </i>
                     </button>
                     </a>
                     
@@ -204,21 +234,14 @@
                     </p>
                     <a href="https://www.lanacion.com.ar/economia/sin-dolares-dura-advertencia-de-la-industria-automotriz-al-bcra-por-la-falta-de-insumos-para-nid26042022/">
                         <button class="boton-noticia">
-                            <table class="texto-boton-noticia">
-                                <td>
-                                    <span>
+                            <p class="texto-btn-noticia">
                                         SIN DÓLARES: DURA ADVERTENCIA DE LA INDUSTRIA AUTOMOTRIZ AL BCRA POR EL ABASTECIMIENTO DE
                                         INSUMOS PARA PRODUCIR
-                                    </span>
-                                </td>
-                                <td>
-                                    <i>
-                                        <img src="https://images.vexels.com/media/users/3/136984/isolated/lists/0f7b26b01932f7912bd4351d2286b2af-punta-de-flecha-derecha-gruesa-1.png"
-                                            alt=">" width="20" height="20">
-                                    </i>
-                                </td>
-                        
-                            </table>
+                            </p>
+                            <i class="icono-flecha">
+                                <img src="https://images.vexels.com/media/users/3/136984/isolated/lists/0f7b26b01932f7912bd4351d2286b2af-punta-de-flecha-derecha-gruesa-1.png"
+                                    alt=">">
+                            </i>
                         </button>
                     </a>
 
@@ -260,21 +283,14 @@
 
                     <a href="https://www.lanacion.com.ar/economia/negocios/la-llama-que-vuelve-llamar-cual-es-la-dupla-creativa-argentina-que-esta-de-regreso-nid26042022/">
                         <button class="boton-noticia">
-
-                            <table class="texto-boton-noticia">
-                                <td>
-                                <span>
+                            <p class="texto-btn-noticia">
                                 LA LLAMA QUE VUELVE LLAMAR: UNA DE LAS PRINCIPALES DUPLAS CREATIVAS DE LA ARGENTINA
                                 ESTÁ DE REGRESO
-                                </span>
-                            </td>
-                            <td>
-                                <i class="icono-flechita">
+                            </p>
+                            <i class="icono-flecha">
                                 <img src="https://images.vexels.com/media/users/3/136984/isolated/lists/0f7b26b01932f7912bd4351d2286b2af-punta-de-flecha-derecha-gruesa-1.png"
-                                    alt=">" width="20" height="20">
-                                </i>
-                            </td>
-                            </table>
+                                    alt=">">
+                            </i>
                         </button>
                     </a>
 
