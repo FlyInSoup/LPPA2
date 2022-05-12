@@ -16,8 +16,6 @@ Principalmente me cuesta el posicionamiento de los elementos sin utilizar el fle
 
 -------------------------------------------
 Avance problematica semana 5.
-Está el diseño responsive casi terminado.
-Que queda?
-Botones del header
-Insertar accesos a al menos 3 noticias (asi se forma una row en pc) debajo de la principal 
+Se me complicó con las posiciones del header sobretodo.
+Le quería agregar unas noticias en columnas abajo pero no llegué con los tiempos por preparar parciales :/
 
