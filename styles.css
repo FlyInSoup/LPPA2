@@ -31,6 +31,10 @@ header div{
 .boton-invisible{
     display: none;
 }
+header button{
+    border-radius: 0.25rem;
+    text-transform: uppercase;
+}
 .botones-registro .boton-visible{
     position: absolute;
     right: 2%;
@@ -261,42 +265,92 @@ figcaption span{
 @media (min-width: 768px) {
    /* PARA HACER LA PRIMERA LETRA MAS GRANDE Y CON OTRO ESTILO*/
 
-.primer-parrafo::first-letter{
-    text-transform: uppercase;
-    font-size: 64px;
-    font-family: SuecaSlab, Georgia,"serif";
-    font-weight: 700;
-    margin: 16px 8px 8px 0px;
-    float: left;
-}  
+    .primer-parrafo::first-letter{
+        text-transform: uppercase;
+        font-size: 64px;
+        font-family: SuecaSlab, Georgia,"serif";
+        font-weight: 700;
+        margin: 16px 8px 8px 0px;
+        float: left;
+    }  
 
-.titulo-interno{
-    font-size: 24px;
-}
+    .titulo-interno{
+        font-size: 24px;
+    }
 
-.titulo-noticia{
-    font-size: 48px;
-    font-weight: 700;
-    line-height: 56px;
-}
+    .titulo-noticia{
+        font-size: 48px;
+        font-weight: 700;
+        line-height: 56px;
+    }
 
-.boton-noticia{
-    width: 90%;
-    margin-left: 5%;
-    margin-right: 5%;
-}
-
-
+    .boton-noticia{
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
 }
 
 
 /*PC*/
 @media (min-width: 1024px) {
+    
+    header{
+        height: 75px;
+        position: sticky;
+        top: 0;
+        background-color: #fefefe;
+        z-index: 1000; 
+        /*tengo problemas para sacar el header siga arriba*/
+    }
+    body{
+        width: 80%;
+        margin-left: 15%;
+    }
+    .articulo{
+        width: 70%;
+    }
     .nav-mobile{
         display: none;
     }
     .boton-invisible{
-        display: inline;
+        display: inline-block;
+    }
+    header div{
+        display: inline-block;
+        width: 32%;
+        position: absolute;
+    }
+    .boton-header-izq{
+        left: 0;
+    }
+    .logo-principal{
+        left: 33%;
+    }
+    .botones-registro{
+        right: 0px;
+    }
+    .botones-registro button{
+        position: absolute;
+        right: 5px;
+    }
+    .botones-registro .boton-visible{
+        right: 115px;
+    }
+    
+   
+    .logo-principal a img{
+        height: 1.875rem
+    }
+    header div button{
+        border: 1px solid transparent;
+        cursor: pointer;
+        padding: 0.75rem 1rem;
+    }
+    .botones-registro .boton-visible{
+        background: #ffff24;
+        border-color: #ccc;
+        color: #000;
     }
     .redes{
         display: inline;
